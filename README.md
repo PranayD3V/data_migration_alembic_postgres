@@ -102,8 +102,7 @@ alembic downgrade base
 Use `docker exec` to access the PostgreSQL container and verify the tables and migration versions:
 
 ```bash
-docker exec -it postgres_migration bash
-psql -U alembic_user -d alembic_db
+docker exec -it postgres_db psql -U alembic_user -d alembic_db
 ```
 
 Run SQL commands to check tables:
